@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Character} from '../../models/character';
+import {FileService} from '../../services/file.service.service';
 
 @Component({
   selector: 'app-character-sheet',
@@ -12,27 +13,23 @@ export class CharacterSheetComponent implements OnInit {
 
   public name: string = '';
 
-  constructor() {
+  public constructor(private _FILE_SERVICE: FileService) {
   }
 
   ngOnInit(): void {
   }
 
+  /**
+   * Save the user's input into a JSON file.
+   */
   public saveFile(): void {
     const JSON_STRING: string = JSON.stringify(new Character({
       firstName: this.firstName,
       name: this.name
     }));
 
-    const ANCHOR: HTMLAnchorElement = document.createElement('a');
-    const BLOB: Blob = new Blob([JSON_STRING], {type: 'application/json'});
-    const URL: string = window.URL.createObjectURL(BLOB);
-    document.body.append(ANCHOR);
+    const FILE_NAME: string = this.firstName + '_' + this.name;
 
-    ANCHOR.href = URL;
-    ANCHOR.download = this.firstName + '_' + this.name;
-    console.log(ANCHOR);
-    ANCHOR.click();
-    window.URL.revokeObjectURL(URL);
+    this._FILE_SERVICE.downloadFile(JSON_STRING, FILE_NAME);
   }
 }
