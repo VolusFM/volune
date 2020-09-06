@@ -3,6 +3,7 @@ import {Character} from '../../models/character';
 import {FileService} from '../../services/file/file.service';
 import {CharacterSheetBioComponent} from '../character-sheet-bio/character-sheet-bio.component';
 import {FormService} from '../../services/form/form.service';
+import {Alias} from '../../models/alias';
 
 @Component({
     selector: 'app-character-sheet',
@@ -36,9 +37,8 @@ export class CharacterSheetComponent{
      * Save the user's input into a JSON file.
      */
     public saveFile(): void {
-        console.log(this.bio.aliases);
-
         const JSON_STRING: string = JSON.stringify(new Character({
+            aliases: this.bio.aliases as Alias[],
             firstName: this.bio.firstName,
             name: this.bio.name
         }), null, 4);

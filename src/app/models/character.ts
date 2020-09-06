@@ -16,4 +16,4 @@ export class Character {
     }
 }
 
-const PROPERTIES = ['firstName', 'name'];
+const PROPERTIES = ['aliases', 'firstName', 'name'];
