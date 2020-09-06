@@ -9,8 +9,15 @@ import {CharacterSheetBioComponent} from '../character-sheet-bio/character-sheet
     styleUrls: ['./character-sheet.component.css']
 })
 export class CharacterSheetComponent{
+    /**
+     * The {@link CharacterSheetBioComponent} child component.
+     */
     @ViewChild('bioComponent') public bio: CharacterSheetBioComponent;
 
+    /**
+     * Creates a new {@link CharacterSheetComponent} instance.
+     * @param _FILE_SERVICE The FileService to inject.
+     */
     public constructor(private _FILE_SERVICE: FileService) {
     }
 
