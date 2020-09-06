@@ -28,7 +28,7 @@ export class CharacterSheetComponent implements OnInit {
             name: this.name
         }));
 
-        const FILE_NAME: string = this.firstName + '_' + this.name;
+        const FILE_NAME: string = this.firstName + '_' + this.name + '_' + new Date().toLocaleDateString();
 
         this._FILE_SERVICE.downloadFile(JSON_STRING, FILE_NAME);
     }
