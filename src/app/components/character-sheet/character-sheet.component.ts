@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
 import {Character} from '../../models/character';
-import {FileService} from '../../services/file.service.service';
+import {FileService} from '../../services/file.service';
 
 @Component({
     selector: 'app-character-sheet',
