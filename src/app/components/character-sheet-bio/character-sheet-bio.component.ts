@@ -9,8 +9,14 @@ import {Component} from '@angular/core';
     styleUrls: ['./character-sheet-bio.component.css']
 })
 export class CharacterSheetBioComponent {
+    /**
+     * Character's first name.
+     */
     public firstName: string;
 
+    /**
+     * Character's name.
+     */
     public name: string;
 
     public constructor() {
