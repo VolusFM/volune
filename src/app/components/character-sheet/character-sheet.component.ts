@@ -1,6 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
 import {Character} from '../../models/character';
-import {FileService} from '../../services/file.service';
+import {FileService} from '../../services/file/file.service';
 import {CharacterSheetBioComponent} from '../character-sheet-bio/character-sheet-bio.component';
 import {FormService} from '../../services/form/form.service';
 
