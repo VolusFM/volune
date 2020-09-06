@@ -39,7 +39,7 @@ export class CharacterSheetComponent{
         const JSON_STRING: string = JSON.stringify(new Character({
             firstName: this.bio.firstName,
             name: this.bio.firstName
-        }));
+        }), null, 4);
 
         const FILE_NAME: string = this.bio.firstName + '_' + this.bio.name + '_' + new Date().toLocaleDateString();
 
