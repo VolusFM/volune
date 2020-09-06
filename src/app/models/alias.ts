@@ -1,11 +1,7 @@
-import {Alias} from './alias';
+export class Alias {
+    public label: string;
 
-export class Character {
-    public aliases: Alias[];
-
-    public firstName: string;
-
-    public name: string;
+    public reason: string;
 
     public constructor(data: unknown) {
         for (const PROP of PROPERTIES) {
@@ -16,4 +12,4 @@ export class Character {
     }
 }
 
-const PROPERTIES = ['firstName', 'name'];
+const PROPERTIES = ['label', 'reason'];
