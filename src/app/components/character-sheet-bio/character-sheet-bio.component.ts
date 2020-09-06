@@ -37,8 +37,8 @@ export class CharacterSheetBioComponent implements OnInit {
      */
     public ngOnInit(): void {
         this.characterBioForm = this._FORM_BUILDER.group({
-            firstName: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+$')]),
-            name: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-]+$')])
+            firstName: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-éèàù]+$')]),
+            name: new FormControl('', [Validators.required, Validators.pattern('^[a-zA-Z0-9_.+-éèàù]+$')])
         });
     }
 }
