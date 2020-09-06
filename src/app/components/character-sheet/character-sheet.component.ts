@@ -2,7 +2,7 @@ import {Component, ViewChild} from '@angular/core';
 import {Character} from '../../models/character';
 import {FileService} from '../../services/file.service';
 import {CharacterSheetBioComponent} from '../character-sheet-bio/character-sheet-bio.component';
-import {FormGroup} from '@angular/forms';
+import {FormService} from '../../services/form/form.service';
 
 @Component({
     selector: 'app-character-sheet',
@@ -14,21 +14,22 @@ export class CharacterSheetComponent{
     /**
      * Creates a new {@link CharacterSheetComponent} instance.
      * @param _FILE_SERVICE The FileService to inject.
+     * @param _FORM_SERVICE The FormService to inject.
      */
-    public constructor(private _FILE_SERVICE: FileService) {
+    public constructor(private _FILE_SERVICE: FileService,
+                       private _FORM_SERVICE: FormService) {
     }
     /**
      * The {@link CharacterSheetBioComponent} child component.
      */
     @ViewChild('bioComponent') public bio: CharacterSheetBioComponent;
 
-    private static isFormValid(form: FormGroup): boolean {
-        return form.valid;
-    }
-
+    /**
+     * Check whether the sheet is valid and can be downloaded.
+     * @returns boolean, whether the sheet is valid.
+     */
     public isSheetValid(): boolean {
-        // return CharacterSheetComponent.isFormValid(this.bio.characterBioForm);
-        return true;
+        return this._FORM_SERVICE.isFormValid(this.bio?.characterBioForm);
     }
 
     /**
