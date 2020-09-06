@@ -36,6 +36,8 @@ export class CharacterSheetComponent{
      * Save the user's input into a JSON file.
      */
     public saveFile(): void {
+        console.log(this.bio.aliases);
+
         const JSON_STRING: string = JSON.stringify(new Character({
             firstName: this.bio.firstName,
             name: this.bio.firstName
