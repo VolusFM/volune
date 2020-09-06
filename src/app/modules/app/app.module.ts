@@ -6,16 +6,16 @@ import {CharacterSheetComponent} from '../../components/character-sheet/characte
 import {FormsModule} from '@angular/forms';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    CharacterSheetComponent
-  ],
-  imports: [
-    BrowserModule,
-    FormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        CharacterSheetComponent
+    ],
+    imports: [
+        BrowserModule,
+        FormsModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
 export class AppModule {
 }
