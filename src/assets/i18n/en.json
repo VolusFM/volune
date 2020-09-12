@@ -2,8 +2,13 @@
   "home": {
     "title": "Welcome to Volune!"
   },
-  "main-bar": {
-    "language": "Language"
+  "nav-bar": {
+    "language": {
+      "en": "English",
+      "fr": "French",
+      "label": "Language"
+    },
+    "title": "Volune"
   },
   "character-sheet": {
     "bio": {

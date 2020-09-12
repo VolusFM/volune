@@ -2,11 +2,11 @@ import {Component, OnInit} from '@angular/core';
 import {TranslateService} from '@ngx-translate/core';
 
 @Component({
-    selector: 'app-main-bar',
-    templateUrl: './main-bar.component.html',
-    styleUrls: ['./main-bar.component.css']
+    selector: 'app-nav-bar',
+    templateUrl: './nav-bar.component.html',
+    styleUrls: ['./nav-bar.component.css']
 })
-export class MainBarComponent {
+export class NavBarComponent {
     /**
      * Creates a new {@link MainBarComponent} instance.
      * @param TRANSLATE_SERVICE The TranslateService to inject.
@@ -14,4 +14,7 @@ export class MainBarComponent {
     public constructor(public readonly TRANSLATE_SERVICE: TranslateService) {
     }
 
+    public selectLanguage(lang: string): void {
+        this.TRANSLATE_SERVICE.use(lang);
+    }
 }
