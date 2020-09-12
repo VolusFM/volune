@@ -1,0 +1,9 @@
+<div class="float-right">
+    <label>
+        {{ 'main-bar.language' | translate }}
+        <select #langSelect (change)="TRANSLATE_SERVICE.use(langSelect.value)">
+            <option *ngFor="let lang of TRANSLATE_SERVICE.getLangs()" [value]="lang"
+                    [selected]="lang === TRANSLATE_SERVICE.currentLang">{{ lang }}</option>
+        </select>
+    </label>
+</div>
