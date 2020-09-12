@@ -1,0 +1,20 @@
+{
+  "home": {
+    "title": "Bienvenue sur Volune!"
+  },
+  "main-bar": {
+    "language": "Langue"
+  },
+  "character-sheet": {
+    "bio": {
+      "aliases": {
+        "add": "Ajouter un alias",
+        "label": "Alias :",
+        "remove": "Supprimer"
+      },
+      "first-name": "Prenom (*) :",
+      "name": "Nom (*) :"
+    },
+    "save": "Sauvegarder"
+  }
+}
