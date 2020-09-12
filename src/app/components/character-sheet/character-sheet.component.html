@@ -1,5 +1,6 @@
 <div class="container-fluid">
     <app-character-sheet-bio #bioComponent></app-character-sheet-bio>
 
-    <button class="float-right btn btn-primary" (click)="saveFile()" [disabled]="!isSheetValid()">Save</button>
+    <button class="float-right btn btn-primary" (click)="saveFile()"
+            [disabled]="!isSheetValid()">{{ 'character-sheet.save' | translate }}</button>
 </div>
