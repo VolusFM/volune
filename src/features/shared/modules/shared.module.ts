@@ -1,8 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {TranslateModule} from '@ngx-translate/core';
-import {NavBarComponent} from '../../components/nav-bar/nav-bar.component';
-import {HttpClient} from '@angular/common/http';
+import {NavBarComponent} from '../components/nav-bar/nav-bar.component';
 
 
 @NgModule({

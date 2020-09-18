@@ -2,7 +2,7 @@ import {Component, ViewChild} from '@angular/core';
 import {Character} from '../../models/character';
 import {FileService} from '../../../../app/services/file/file.service';
 import {CharacterSheetBioComponent} from '../character-sheet-bio/character-sheet-bio.component';
-import {FormService} from '../../../../app/services/form/form.service';
+import {FormService} from '../../../shared/services/form/form.service';
 import {Alias} from '../../models/alias';
 
 @Component({
