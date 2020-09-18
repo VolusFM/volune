@@ -8,7 +8,7 @@ import {TranslateService} from '@ngx-translate/core';
 })
 export class NavBarComponent {
     /**
-     * Creates a new {@link MainBarComponent} instance.
+     * Creates a new {@link NavBarComponent} instance.
      * @param TRANSLATE_SERVICE The TranslateService to inject.
      */
     public constructor(public readonly TRANSLATE_SERVICE: TranslateService) {

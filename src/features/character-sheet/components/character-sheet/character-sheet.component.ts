@@ -1,8 +1,8 @@
 import {Component, ViewChild} from '@angular/core';
 import {Character} from '../../models/character';
-import {FileService} from '../../services/file/file.service';
+import {FileService} from '../../../../app/services/file/file.service';
 import {CharacterSheetBioComponent} from '../character-sheet-bio/character-sheet-bio.component';
-import {FormService} from '../../services/form/form.service';
+import {FormService} from '../../../../app/services/form/form.service';
 import {Alias} from '../../models/alias';
 
 @Component({
@@ -10,7 +10,7 @@ import {Alias} from '../../models/alias';
     templateUrl: './character-sheet.component.html',
     styleUrls: ['./character-sheet.component.css']
 })
-export class CharacterSheetComponent{
+export class CharacterSheetComponent {
 
     /**
      * Creates a new {@link CharacterSheetComponent} instance.
@@ -20,6 +20,7 @@ export class CharacterSheetComponent{
     public constructor(private _FILE_SERVICE: FileService,
                        private _FORM_SERVICE: FormService) {
     }
+
     /**
      * The {@link CharacterSheetBioComponent} child component.
      */
