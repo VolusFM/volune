@@ -1,5 +1,4 @@
 import {ComponentFixture, TestBed} from '@angular/core/testing';
-
 import {CharacterSheetComponent} from './character-sheet.component';
 
 describe('CharacterSheetComponent', () => {
@@ -10,7 +9,7 @@ describe('CharacterSheetComponent', () => {
         await TestBed.configureTestingModule({
             declarations: [CharacterSheetComponent]
         })
-            .compileComponents();
+        .compileComponents();
     });
 
     beforeEach(() => {

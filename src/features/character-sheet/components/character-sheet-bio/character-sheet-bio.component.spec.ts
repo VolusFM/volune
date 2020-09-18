@@ -12,7 +12,7 @@ describe('CharacterSheetBioComponent', () => {
             declarations: [CharacterSheetBioComponent],
             providers: [FormBuilder]
         })
-            .compileComponents();
+        .compileComponents();
     });
 
     beforeEach(() => {
