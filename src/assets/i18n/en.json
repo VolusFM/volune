@@ -1,25 +1,25 @@
 {
-  "home": {
-    "title": "Welcome to Volune!"
-  },
-  "nav-bar": {
-    "language": {
-      "en": "English",
-      "fr": "French",
-      "label": "Language"
+    "home": {
+        "title": "Welcome to Volune!"
     },
-    "title": "Volune"
-  },
-  "character-sheet": {
-    "bio": {
-      "aliases": {
-        "add": "Add an alias",
-        "label": "Aliases:",
-        "remove": "Remove"
-      },
-      "first-name": "First name (*):",
-      "name": "Name (*):"
+    "nav-bar": {
+        "language": {
+            "en": "English",
+            "fr": "French",
+            "label": "Language"
+        },
+        "title": "Volune"
     },
-    "save": "Save"
-  }
+    "character-sheet": {
+        "bio": {
+            "aliases": {
+                "add": "Add an alias",
+                "label": "Aliases:",
+                "remove": "Remove"
+            },
+            "first-name": "First name (*):",
+            "name": "Name (*):"
+        },
+        "save": "Save"
+    }
 }
